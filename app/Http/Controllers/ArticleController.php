@@ -37,7 +37,7 @@ class ArticleController extends Controller
             return response()->json(['message' => 'Article créé avec succès', 'article' => $article], 201);
         } catch (\Exception $e) {
             DB::rollBack();
-            return response()->json(['error' => 'Une erreur est survenue lors de la création de l\'article'], 500);
+            return response()->json(['error' => 'Une erreur est survenue lors de la création de l\'article1'], 500);
         }
     }
     /**
